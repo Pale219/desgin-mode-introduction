@@ -1,0 +1,27 @@
+package bridge.phone;
+
+import bridge.brand.Brand;
+
+import java.util.HashMap;
+
+public class UpRightPhone extends Phone{
+    public UpRightPhone(Brand brand) {
+        super(brand);
+    }
+
+    public void call(){
+        super.call();
+        System.out.println("直立式手机");
+        HashMap<String,String> map = new HashMap<>();
+    }
+
+    public void open(){
+        super.open();
+        System.out.println("直立式手机");
+    }
+
+    public void close(){
+        super.close();
+        System.out.println("直立式手机");
+    }
+}
